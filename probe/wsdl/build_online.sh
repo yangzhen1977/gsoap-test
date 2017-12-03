@@ -1,5 +1,5 @@
 #!/usr/bin/envbash
-
+#http://blog.csdn.net/ghostyu/article/details/8182516
 
 #http://www.onvif.org/onvif/ver10/device/wsdl/devicemgmt.wsdl
 #http://www.onvif.org/onvif/ver10/events/wsdl/event.wsdl
@@ -26,7 +26,10 @@
 
 WSDLS=http://www.onvif.org/onvif/ver10/network/wsdl/remotediscovery.wsdl
 
-wsdl2h -o onvif-c.h -c ${WSDLS}
-wsdl2h -o onvif-cpp.h -c++ ${WSDLS}     
-wsdl2h -o onvif-c11.h -c++11 ${WSDLS}
+#cp  /usr/share/gsoap/WS/WS-typemap.dat ./
+#typemap.dat:
+#https://www.genivia.com/resources.html#How_do_I_use_gSOAP_with_the_ONVIF_specifications?  
 
+wsdl2h -c     -s -t typemap.dat -o onvif-c.h  ${WSDLS}
+wsdl2h -c++   -s -t typemap.dat -o onvif-cpp.h  ${WSDLS}     
+wsdl2h -c++11 -s -t typemap.dat -o onvif-c11.h  ${WSDLS}
