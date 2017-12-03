@@ -11,10 +11,6 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 --------------------------------------------------------------------------------
 */
 
-#include <deque>
-#include <list>
-#include <vector>
-#include <set>
 #define SOAP_WSDD_2005
 #define SOAP_WSA_200408
 #define SOAP_NAMESPACE_OF_wsdd	"http://schemas.xmlsoap.org/ws/2005/04/discovery"
@@ -37,7 +33,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 
 /* wsa.h:119 */
 #ifndef SOAP_TYPE_wsa__RelationshipTypeValues
-#define SOAP_TYPE_wsa__RelationshipTypeValues (16)
+#define SOAP_TYPE_wsa__RelationshipTypeValues (12)
 /* wsa:RelationshipTypeValues */
 enum wsa__RelationshipTypeValues
 {
@@ -47,7 +43,7 @@ enum wsa__RelationshipTypeValues
 
 /* wsa.h:127 */
 #ifndef SOAP_TYPE_wsa__FaultSubcodeValues
-#define SOAP_TYPE_wsa__FaultSubcodeValues (17)
+#define SOAP_TYPE_wsa__FaultSubcodeValues (13)
 /* wsa:FaultSubcodeValues */
 enum wsa__FaultSubcodeValues
 {
@@ -61,7 +57,7 @@ enum wsa__FaultSubcodeValues
 
 /* wsdd10.h:111 */
 #ifndef SOAP_TYPE_wsdd__FaultCodeType
-#define SOAP_TYPE_wsdd__FaultCodeType (62)
+#define SOAP_TYPE_wsdd__FaultCodeType (58)
 /* wsdd:FaultCodeType */
 enum wsdd__FaultCodeType
 {
@@ -105,13 +101,13 @@ struct __wsdd__Probe;	/* wsdx.h:85 */
 struct __wsdd__ProbeMatches;	/* wsdx.h:94 */
 struct __wsdd__Resolve;	/* wsdx.h:103 */
 struct __wsdd__ResolveMatches;	/* wsdx.h:112 */
-struct __tdn__Hello;	/* ../../wsdl/onvif-cpp.h:323 */
-struct __tdn__Bye;	/* ../../wsdl/onvif-cpp.h:389 */
-struct __tdn__Probe;	/* ../../wsdl/onvif-cpp.h:455 */
+struct __tdn__Hello;	/* ../../wsdl/onvif-cpp.h:313 */
+struct __tdn__Bye;	/* ../../wsdl/onvif-cpp.h:379 */
+struct __tdn__Probe;	/* ../../wsdl/onvif-cpp.h:445 */
 
 /* wsa.h:94 */
 #ifndef SOAP_TYPE_wsa__EndpointReferenceType
-#define SOAP_TYPE_wsa__EndpointReferenceType (11)
+#define SOAP_TYPE_wsa__EndpointReferenceType (7)
 /* wsa:EndpointReferenceType complex type: */
 struct wsa__EndpointReferenceType
 {
@@ -125,7 +121,7 @@ public:
 	char **__any;
 	char *__anyAttribute;	/* optional attribute of XSD type xsd:anyType */
 public:
-	int soap_type() const { return 11; } /* = unique type id SOAP_TYPE_wsa__EndpointReferenceType */
+	int soap_type() const { return 7; } /* = unique type id SOAP_TYPE_wsa__EndpointReferenceType */
 	         wsa__EndpointReferenceType();
 	friend SOAP_FMAC1 wsa__EndpointReferenceType * SOAP_FMAC2 soap_instantiate_wsa__EndpointReferenceType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -133,7 +129,7 @@ public:
 
 /* wsa.h:97 */
 #ifndef SOAP_TYPE_wsa__ReferencePropertiesType
-#define SOAP_TYPE_wsa__ReferencePropertiesType (12)
+#define SOAP_TYPE_wsa__ReferencePropertiesType (8)
 /* wsa:ReferencePropertiesType complex type: */
 struct wsa__ReferencePropertiesType
 {
@@ -141,7 +137,7 @@ public:
 	int __size;	/* sequence of elements <-any> of XSD type xsd:anyType */
 	char **__any;
 public:
-	int soap_type() const { return 12; } /* = unique type id SOAP_TYPE_wsa__ReferencePropertiesType */
+	int soap_type() const { return 8; } /* = unique type id SOAP_TYPE_wsa__ReferencePropertiesType */
 	         wsa__ReferencePropertiesType();
 	friend SOAP_FMAC1 wsa__ReferencePropertiesType * SOAP_FMAC2 soap_instantiate_wsa__ReferencePropertiesType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -149,7 +145,7 @@ public:
 
 /* wsa.h:100 */
 #ifndef SOAP_TYPE_wsa__ReferenceParametersType
-#define SOAP_TYPE_wsa__ReferenceParametersType (13)
+#define SOAP_TYPE_wsa__ReferenceParametersType (9)
 /* wsa:ReferenceParametersType complex type: */
 struct wsa__ReferenceParametersType
 {
@@ -157,7 +153,7 @@ public:
 	int __size;	/* sequence of elements <-any> of XSD type xsd:anyType */
 	char **__any;
 public:
-	int soap_type() const { return 13; } /* = unique type id SOAP_TYPE_wsa__ReferenceParametersType */
+	int soap_type() const { return 9; } /* = unique type id SOAP_TYPE_wsa__ReferenceParametersType */
 	         wsa__ReferenceParametersType();
 	friend SOAP_FMAC1 wsa__ReferenceParametersType * SOAP_FMAC2 soap_instantiate_wsa__ReferenceParametersType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -165,7 +161,7 @@ public:
 
 /* wsa.h:103 */
 #ifndef SOAP_TYPE_wsa__ServiceNameType
-#define SOAP_TYPE_wsa__ServiceNameType (14)
+#define SOAP_TYPE_wsa__ServiceNameType (10)
 /* wsa:ServiceNameType simple type: */
 struct wsa__ServiceNameType
 {
@@ -174,7 +170,7 @@ public:
 	char *PortName;	/* optional attribute of XSD type xsd:string */
 	char *__anyAttribute;	/* optional attribute of XSD type xsd:anyType */
 public:
-	int soap_type() const { return 14; } /* = unique type id SOAP_TYPE_wsa__ServiceNameType */
+	int soap_type() const { return 10; } /* = unique type id SOAP_TYPE_wsa__ServiceNameType */
 	         wsa__ServiceNameType();
 	friend SOAP_FMAC1 wsa__ServiceNameType * SOAP_FMAC2 soap_instantiate_wsa__ServiceNameType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -182,7 +178,7 @@ public:
 
 /* wsa.h:106 */
 #ifndef SOAP_TYPE_wsa__Relationship
-#define SOAP_TYPE_wsa__Relationship (15)
+#define SOAP_TYPE_wsa__Relationship (11)
 /* wsa:Relationship simple type: */
 struct wsa__Relationship
 {
@@ -191,7 +187,7 @@ public:
 	char *RelationshipType;	/* optional attribute of XSD type xsd:QName */
 	char *__anyAttribute;	/* optional attribute of XSD type xsd:anyType */
 public:
-	int soap_type() const { return 15; } /* = unique type id SOAP_TYPE_wsa__Relationship */
+	int soap_type() const { return 11; } /* = unique type id SOAP_TYPE_wsa__Relationship */
 	         wsa__Relationship();
 	friend SOAP_FMAC1 wsa__Relationship * SOAP_FMAC2 soap_instantiate_wsa__Relationship(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -200,7 +196,7 @@ public:
 /* wsa.h:250 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Header
-#define SOAP_TYPE_SOAP_ENV__Header (33)
+#define SOAP_TYPE_SOAP_ENV__Header (29)
 /* SOAP Header: */
 struct SOAP_ENV__Header
 {
@@ -214,7 +210,7 @@ public:
 	char *wsa__Action;	/* mustUnderstand */
 	struct wsdd__AppSequenceType *wsdd__AppSequence;	/* optional element of XSD type wsdd:AppSequenceType */
 public:
-	int soap_type() const { return 33; } /* = unique type id SOAP_TYPE_SOAP_ENV__Header */
+	int soap_type() const { return 29; } /* = unique type id SOAP_TYPE_SOAP_ENV__Header */
 	         SOAP_ENV__Header();
 	friend SOAP_FMAC1 SOAP_ENV__Header * SOAP_FMAC2 soap_instantiate_SOAP_ENV__Header(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -224,7 +220,7 @@ public:
 /* wsa.h:266 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Detail
-#define SOAP_TYPE_SOAP_ENV__Detail (38)
+#define SOAP_TYPE_SOAP_ENV__Detail (34)
 /* SOAP-ENV:Detail complex type: */
 struct SOAP_ENV__Detail
 {
@@ -234,7 +230,7 @@ public:
 	   WARNING: do not create a cyclic data structure graph throught this element unless SOAP encoding or SOAP_XML_GRAPH are used for id-ref serialization */
 	void *fault;	/* transient (not serialized) */
 public:
-	int soap_type() const { return 38; } /* = unique type id SOAP_TYPE_SOAP_ENV__Detail */
+	int soap_type() const { return 34; } /* = unique type id SOAP_TYPE_SOAP_ENV__Detail */
 	         SOAP_ENV__Detail();
 	friend SOAP_FMAC1 SOAP_ENV__Detail * SOAP_FMAC2 soap_instantiate_SOAP_ENV__Detail(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -244,7 +240,7 @@ public:
 /* wsa.h:267 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Code
-#define SOAP_TYPE_SOAP_ENV__Code (40)
+#define SOAP_TYPE_SOAP_ENV__Code (36)
 /* Type SOAP_ENV__Code is a recursive data type (in)directly referencing itself through its (base) class members */
 /* SOAP Fault Code: */
 struct SOAP_ENV__Code
@@ -253,7 +249,7 @@ public:
 	char *SOAP_ENV__Value;	/* optional element of XSD type xsd:QName */
 	struct SOAP_ENV__Code *SOAP_ENV__Subcode;	/* optional element of XSD type SOAP-ENV:Code */
 public:
-	int soap_type() const { return 40; } /* = unique type id SOAP_TYPE_SOAP_ENV__Code */
+	int soap_type() const { return 36; } /* = unique type id SOAP_TYPE_SOAP_ENV__Code */
 	         SOAP_ENV__Code();
 	friend SOAP_FMAC1 SOAP_ENV__Code * SOAP_FMAC2 soap_instantiate_SOAP_ENV__Code(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -263,14 +259,14 @@ public:
 /* wsa.h:268 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Reason
-#define SOAP_TYPE_SOAP_ENV__Reason (42)
+#define SOAP_TYPE_SOAP_ENV__Reason (38)
 /* SOAP-ENV:Reason complex type: */
 struct SOAP_ENV__Reason
 {
 public:
 	char *SOAP_ENV__Text;	/* optional element of XSD type xsd:string */
 public:
-	int soap_type() const { return 42; } /* = unique type id SOAP_TYPE_SOAP_ENV__Reason */
+	int soap_type() const { return 38; } /* = unique type id SOAP_TYPE_SOAP_ENV__Reason */
 	         SOAP_ENV__Reason();
 	friend SOAP_FMAC1 SOAP_ENV__Reason * SOAP_FMAC2 soap_instantiate_SOAP_ENV__Reason(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -280,7 +276,7 @@ public:
 /* wsa.h:273 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Fault
-#define SOAP_TYPE_SOAP_ENV__Fault (46)
+#define SOAP_TYPE_SOAP_ENV__Fault (42)
 /* SOAP Fault: */
 struct SOAP_ENV__Fault
 {
@@ -295,7 +291,7 @@ public:
 	char *SOAP_ENV__Role;	/* optional element of XSD type xsd:string */
 	struct SOAP_ENV__Detail *SOAP_ENV__Detail;	/* optional element of XSD type SOAP-ENV:Detail */
 public:
-	int soap_type() const { return 46; } /* = unique type id SOAP_TYPE_SOAP_ENV__Fault */
+	int soap_type() const { return 42; } /* = unique type id SOAP_TYPE_SOAP_ENV__Fault */
 	         SOAP_ENV__Fault();
 	friend SOAP_FMAC1 SOAP_ENV__Fault * SOAP_FMAC2 soap_instantiate_SOAP_ENV__Fault(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -304,7 +300,7 @@ public:
 
 /* wsdd10.h:57 */
 #ifndef SOAP_TYPE_wsdd__HelloType
-#define SOAP_TYPE_wsdd__HelloType (47)
+#define SOAP_TYPE_wsdd__HelloType (43)
 /* wsdd:HelloType complex type: */
 struct wsdd__HelloType
 {
@@ -315,7 +311,7 @@ public:
 	char *XAddrs;	/* optional element of XSD type wsdd:UriListType */
 	unsigned int MetadataVersion;	/* required element of XSD type xsd:unsignedInt */
 public:
-	int soap_type() const { return 47; } /* = unique type id SOAP_TYPE_wsdd__HelloType */
+	int soap_type() const { return 43; } /* = unique type id SOAP_TYPE_wsdd__HelloType */
 	         wsdd__HelloType();
 	friend SOAP_FMAC1 wsdd__HelloType * SOAP_FMAC2 soap_instantiate_wsdd__HelloType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -323,7 +319,7 @@ public:
 
 /* wsdd10.h:60 */
 #ifndef SOAP_TYPE_wsdd__ByeType
-#define SOAP_TYPE_wsdd__ByeType (48)
+#define SOAP_TYPE_wsdd__ByeType (44)
 /* wsdd:ByeType complex type: */
 struct wsdd__ByeType
 {
@@ -334,7 +330,7 @@ public:
 	char *XAddrs;	/* optional element of XSD type wsdd:UriListType */
 	unsigned int *MetadataVersion;	/* optional element of XSD type xsd:unsignedInt */
 public:
-	int soap_type() const { return 48; } /* = unique type id SOAP_TYPE_wsdd__ByeType */
+	int soap_type() const { return 44; } /* = unique type id SOAP_TYPE_wsdd__ByeType */
 	         wsdd__ByeType();
 	friend SOAP_FMAC1 wsdd__ByeType * SOAP_FMAC2 soap_instantiate_wsdd__ByeType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -342,7 +338,7 @@ public:
 
 /* wsdd10.h:63 */
 #ifndef SOAP_TYPE_wsdd__ProbeType
-#define SOAP_TYPE_wsdd__ProbeType (49)
+#define SOAP_TYPE_wsdd__ProbeType (45)
 /* wsdd:ProbeType complex type: */
 struct wsdd__ProbeType
 {
@@ -350,7 +346,7 @@ public:
 	char *Types;	/* optional element of XSD type xsd:QName */
 	struct wsdd__ScopesType *Scopes;	/* optional element of XSD type wsdd:ScopesType */
 public:
-	int soap_type() const { return 49; } /* = unique type id SOAP_TYPE_wsdd__ProbeType */
+	int soap_type() const { return 45; } /* = unique type id SOAP_TYPE_wsdd__ProbeType */
 	         wsdd__ProbeType();
 	friend SOAP_FMAC1 wsdd__ProbeType * SOAP_FMAC2 soap_instantiate_wsdd__ProbeType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -358,7 +354,7 @@ public:
 
 /* wsdd10.h:66 */
 #ifndef SOAP_TYPE_wsdd__ProbeMatchesType
-#define SOAP_TYPE_wsdd__ProbeMatchesType (50)
+#define SOAP_TYPE_wsdd__ProbeMatchesType (46)
 /* wsdd:ProbeMatchesType complex type: */
 struct wsdd__ProbeMatchesType
 {
@@ -366,7 +362,7 @@ public:
 	int __sizeProbeMatch;	/* SOAP 1.2 RPC return element (when namespace qualified) */	/* sequence of elements <ProbeMatch> of XSD type wsdd:ProbeMatchType */
 	struct wsdd__ProbeMatchType *ProbeMatch;
 public:
-	int soap_type() const { return 50; } /* = unique type id SOAP_TYPE_wsdd__ProbeMatchesType */
+	int soap_type() const { return 46; } /* = unique type id SOAP_TYPE_wsdd__ProbeMatchesType */
 	         wsdd__ProbeMatchesType();
 	friend SOAP_FMAC1 wsdd__ProbeMatchesType * SOAP_FMAC2 soap_instantiate_wsdd__ProbeMatchesType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -374,7 +370,7 @@ public:
 
 /* wsdd10.h:69 */
 #ifndef SOAP_TYPE_wsdd__ProbeMatchType
-#define SOAP_TYPE_wsdd__ProbeMatchType (51)
+#define SOAP_TYPE_wsdd__ProbeMatchType (47)
 /* wsdd:ProbeMatchType complex type: */
 struct wsdd__ProbeMatchType
 {
@@ -385,7 +381,7 @@ public:
 	char *XAddrs;	/* optional element of XSD type wsdd:UriListType */
 	unsigned int MetadataVersion;	/* required element of XSD type xsd:unsignedInt */
 public:
-	int soap_type() const { return 51; } /* = unique type id SOAP_TYPE_wsdd__ProbeMatchType */
+	int soap_type() const { return 47; } /* = unique type id SOAP_TYPE_wsdd__ProbeMatchType */
 	         wsdd__ProbeMatchType();
 	friend SOAP_FMAC1 wsdd__ProbeMatchType * SOAP_FMAC2 soap_instantiate_wsdd__ProbeMatchType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -393,14 +389,14 @@ public:
 
 /* wsdd10.h:72 */
 #ifndef SOAP_TYPE_wsdd__ResolveType
-#define SOAP_TYPE_wsdd__ResolveType (52)
+#define SOAP_TYPE_wsdd__ResolveType (48)
 /* wsdd:ResolveType complex type: */
 struct wsdd__ResolveType
 {
 public:
 	struct wsa__EndpointReferenceType wsa__EndpointReference;	/* SOAP 1.2 RPC return element (when namespace qualified) */	/* required element of XSD type wsa:EndpointReference */
 public:
-	int soap_type() const { return 52; } /* = unique type id SOAP_TYPE_wsdd__ResolveType */
+	int soap_type() const { return 48; } /* = unique type id SOAP_TYPE_wsdd__ResolveType */
 	         wsdd__ResolveType();
 	friend SOAP_FMAC1 wsdd__ResolveType * SOAP_FMAC2 soap_instantiate_wsdd__ResolveType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -408,14 +404,14 @@ public:
 
 /* wsdd10.h:75 */
 #ifndef SOAP_TYPE_wsdd__ResolveMatchesType
-#define SOAP_TYPE_wsdd__ResolveMatchesType (53)
+#define SOAP_TYPE_wsdd__ResolveMatchesType (49)
 /* wsdd:ResolveMatchesType complex type: */
 struct wsdd__ResolveMatchesType
 {
 public:
 	struct wsdd__ResolveMatchType *ResolveMatch;	/* optional element of XSD type wsdd:ResolveMatchType */
 public:
-	int soap_type() const { return 53; } /* = unique type id SOAP_TYPE_wsdd__ResolveMatchesType */
+	int soap_type() const { return 49; } /* = unique type id SOAP_TYPE_wsdd__ResolveMatchesType */
 	         wsdd__ResolveMatchesType();
 	friend SOAP_FMAC1 wsdd__ResolveMatchesType * SOAP_FMAC2 soap_instantiate_wsdd__ResolveMatchesType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -423,7 +419,7 @@ public:
 
 /* wsdd10.h:78 */
 #ifndef SOAP_TYPE_wsdd__ResolveMatchType
-#define SOAP_TYPE_wsdd__ResolveMatchType (54)
+#define SOAP_TYPE_wsdd__ResolveMatchType (50)
 /* wsdd:ResolveMatchType complex type: */
 struct wsdd__ResolveMatchType
 {
@@ -434,7 +430,7 @@ public:
 	char *XAddrs;	/* optional element of XSD type wsdd:UriListType */
 	unsigned int MetadataVersion;	/* required element of XSD type xsd:unsignedInt */
 public:
-	int soap_type() const { return 54; } /* = unique type id SOAP_TYPE_wsdd__ResolveMatchType */
+	int soap_type() const { return 50; } /* = unique type id SOAP_TYPE_wsdd__ResolveMatchType */
 	         wsdd__ResolveMatchType();
 	friend SOAP_FMAC1 wsdd__ResolveMatchType * SOAP_FMAC2 soap_instantiate_wsdd__ResolveMatchType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -442,14 +438,14 @@ public:
 
 /* wsdd10.h:84 */
 #ifndef SOAP_TYPE_wsdd__SecurityType
-#define SOAP_TYPE_wsdd__SecurityType (56)
+#define SOAP_TYPE_wsdd__SecurityType (52)
 /* wsdd:SecurityType complex type: */
 struct wsdd__SecurityType
 {
 public:
 	struct wsdd__SigType *Sig;	/* optional element of XSD type wsdd:SigType */
 public:
-	int soap_type() const { return 56; } /* = unique type id SOAP_TYPE_wsdd__SecurityType */
+	int soap_type() const { return 52; } /* = unique type id SOAP_TYPE_wsdd__SecurityType */
 	         wsdd__SecurityType();
 	friend SOAP_FMAC1 wsdd__SecurityType * SOAP_FMAC2 soap_instantiate_wsdd__SecurityType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -457,7 +453,7 @@ public:
 
 /* wsdd10.h:87 */
 #ifndef SOAP_TYPE_wsdd__SigType
-#define SOAP_TYPE_wsdd__SigType (57)
+#define SOAP_TYPE_wsdd__SigType (53)
 /* wsdd:SigType complex type: */
 struct wsdd__SigType
 {
@@ -467,7 +463,7 @@ public:
 	char *Refs;	/* required attribute of XSD type xsd:string */
 	char *Sig;	/* required attribute of XSD type xsd:string */
 public:
-	int soap_type() const { return 57; } /* = unique type id SOAP_TYPE_wsdd__SigType */
+	int soap_type() const { return 53; } /* = unique type id SOAP_TYPE_wsdd__SigType */
 	         wsdd__SigType();
 	friend SOAP_FMAC1 wsdd__SigType * SOAP_FMAC2 soap_instantiate_wsdd__SigType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -475,7 +471,7 @@ public:
 
 /* wsdd10.h:81 */
 #ifndef SOAP_TYPE_wsdd__ScopesType
-#define SOAP_TYPE_wsdd__ScopesType (55)
+#define SOAP_TYPE_wsdd__ScopesType (51)
 /* wsdd:ScopesType simple type: */
 struct wsdd__ScopesType
 {
@@ -483,7 +479,7 @@ public:
 	char *__item;	/* mixed XML content */
 	char *MatchBy;	/* optional attribute of XSD type xsd:string */
 public:
-	int soap_type() const { return 55; } /* = unique type id SOAP_TYPE_wsdd__ScopesType */
+	int soap_type() const { return 51; } /* = unique type id SOAP_TYPE_wsdd__ScopesType */
 	         wsdd__ScopesType();
 	friend SOAP_FMAC1 wsdd__ScopesType * SOAP_FMAC2 soap_instantiate_wsdd__ScopesType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -491,7 +487,7 @@ public:
 
 /* wsdd10.h:90 */
 #ifndef SOAP_TYPE_wsdd__AppSequenceType
-#define SOAP_TYPE_wsdd__AppSequenceType (58)
+#define SOAP_TYPE_wsdd__AppSequenceType (54)
 /* wsdd:AppSequenceType complex type: */
 struct wsdd__AppSequenceType
 {
@@ -500,7 +496,7 @@ public:
 	char *SequenceId;	/* optional attribute of XSD type xsd:string */
 	unsigned int MessageNumber;	/* required attribute of XSD type xsd:unsignedInt */
 public:
-	int soap_type() const { return 58; } /* = unique type id SOAP_TYPE_wsdd__AppSequenceType */
+	int soap_type() const { return 54; } /* = unique type id SOAP_TYPE_wsdd__AppSequenceType */
 	         wsdd__AppSequenceType();
 	friend SOAP_FMAC1 wsdd__AppSequenceType * SOAP_FMAC2 soap_instantiate_wsdd__AppSequenceType(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -508,14 +504,14 @@ public:
 
 /* wsdx.h:67 */
 #ifndef SOAP_TYPE___wsdd__Hello
-#define SOAP_TYPE___wsdd__Hello (71)
+#define SOAP_TYPE___wsdd__Hello (67)
 /* Operation wrapper: */
 struct __wsdd__Hello
 {
 public:
 	struct wsdd__HelloType *wsdd__Hello;	/* optional element of XSD type wsdd:HelloType */
 public:
-	int soap_type() const { return 71; } /* = unique type id SOAP_TYPE___wsdd__Hello */
+	int soap_type() const { return 67; } /* = unique type id SOAP_TYPE___wsdd__Hello */
 	         __wsdd__Hello();
 	friend SOAP_FMAC1 __wsdd__Hello * SOAP_FMAC2 soap_instantiate___wsdd__Hello(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -523,14 +519,14 @@ public:
 
 /* wsdx.h:76 */
 #ifndef SOAP_TYPE___wsdd__Bye
-#define SOAP_TYPE___wsdd__Bye (74)
+#define SOAP_TYPE___wsdd__Bye (70)
 /* Operation wrapper: */
 struct __wsdd__Bye
 {
 public:
 	struct wsdd__ByeType *wsdd__Bye;	/* optional element of XSD type wsdd:ByeType */
 public:
-	int soap_type() const { return 74; } /* = unique type id SOAP_TYPE___wsdd__Bye */
+	int soap_type() const { return 70; } /* = unique type id SOAP_TYPE___wsdd__Bye */
 	         __wsdd__Bye();
 	friend SOAP_FMAC1 __wsdd__Bye * SOAP_FMAC2 soap_instantiate___wsdd__Bye(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -538,14 +534,14 @@ public:
 
 /* wsdx.h:85 */
 #ifndef SOAP_TYPE___wsdd__Probe
-#define SOAP_TYPE___wsdd__Probe (77)
+#define SOAP_TYPE___wsdd__Probe (73)
 /* Operation wrapper: */
 struct __wsdd__Probe
 {
 public:
 	struct wsdd__ProbeType *wsdd__Probe;	/* optional element of XSD type wsdd:ProbeType */
 public:
-	int soap_type() const { return 77; } /* = unique type id SOAP_TYPE___wsdd__Probe */
+	int soap_type() const { return 73; } /* = unique type id SOAP_TYPE___wsdd__Probe */
 	         __wsdd__Probe();
 	friend SOAP_FMAC1 __wsdd__Probe * SOAP_FMAC2 soap_instantiate___wsdd__Probe(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -553,14 +549,14 @@ public:
 
 /* wsdx.h:94 */
 #ifndef SOAP_TYPE___wsdd__ProbeMatches
-#define SOAP_TYPE___wsdd__ProbeMatches (80)
+#define SOAP_TYPE___wsdd__ProbeMatches (76)
 /* Operation wrapper: */
 struct __wsdd__ProbeMatches
 {
 public:
 	struct wsdd__ProbeMatchesType *wsdd__ProbeMatches;	/* optional element of XSD type wsdd:ProbeMatchesType */
 public:
-	int soap_type() const { return 80; } /* = unique type id SOAP_TYPE___wsdd__ProbeMatches */
+	int soap_type() const { return 76; } /* = unique type id SOAP_TYPE___wsdd__ProbeMatches */
 	         __wsdd__ProbeMatches();
 	friend SOAP_FMAC1 __wsdd__ProbeMatches * SOAP_FMAC2 soap_instantiate___wsdd__ProbeMatches(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -568,14 +564,14 @@ public:
 
 /* wsdx.h:103 */
 #ifndef SOAP_TYPE___wsdd__Resolve
-#define SOAP_TYPE___wsdd__Resolve (83)
+#define SOAP_TYPE___wsdd__Resolve (79)
 /* Operation wrapper: */
 struct __wsdd__Resolve
 {
 public:
 	struct wsdd__ResolveType *wsdd__Resolve;	/* optional element of XSD type wsdd:ResolveType */
 public:
-	int soap_type() const { return 83; } /* = unique type id SOAP_TYPE___wsdd__Resolve */
+	int soap_type() const { return 79; } /* = unique type id SOAP_TYPE___wsdd__Resolve */
 	         __wsdd__Resolve();
 	friend SOAP_FMAC1 __wsdd__Resolve * SOAP_FMAC2 soap_instantiate___wsdd__Resolve(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -583,59 +579,59 @@ public:
 
 /* wsdx.h:112 */
 #ifndef SOAP_TYPE___wsdd__ResolveMatches
-#define SOAP_TYPE___wsdd__ResolveMatches (86)
+#define SOAP_TYPE___wsdd__ResolveMatches (82)
 /* Operation wrapper: */
 struct __wsdd__ResolveMatches
 {
 public:
 	struct wsdd__ResolveMatchesType *wsdd__ResolveMatches;	/* optional element of XSD type wsdd:ResolveMatchesType */
 public:
-	int soap_type() const { return 86; } /* = unique type id SOAP_TYPE___wsdd__ResolveMatches */
+	int soap_type() const { return 82; } /* = unique type id SOAP_TYPE___wsdd__ResolveMatches */
 	         __wsdd__ResolveMatches();
 	friend SOAP_FMAC1 __wsdd__ResolveMatches * SOAP_FMAC2 soap_instantiate___wsdd__ResolveMatches(struct soap*, int, const char*, const char*, size_t*);
 };
 #endif
 
-/* ../../wsdl/onvif-cpp.h:323 */
+/* ../../wsdl/onvif-cpp.h:313 */
 #ifndef SOAP_TYPE___tdn__Hello
-#define SOAP_TYPE___tdn__Hello (89)
+#define SOAP_TYPE___tdn__Hello (85)
 /* Operation wrapper: */
 struct __tdn__Hello
 {
 public:
 	struct wsdd__HelloType tdn__Hello;	/* required element of XSD type wsdd:HelloType */
 public:
-	int soap_type() const { return 89; } /* = unique type id SOAP_TYPE___tdn__Hello */
+	int soap_type() const { return 85; } /* = unique type id SOAP_TYPE___tdn__Hello */
 	         __tdn__Hello();
 	friend SOAP_FMAC1 __tdn__Hello * SOAP_FMAC2 soap_instantiate___tdn__Hello(struct soap*, int, const char*, const char*, size_t*);
 };
 #endif
 
-/* ../../wsdl/onvif-cpp.h:389 */
+/* ../../wsdl/onvif-cpp.h:379 */
 #ifndef SOAP_TYPE___tdn__Bye
-#define SOAP_TYPE___tdn__Bye (91)
+#define SOAP_TYPE___tdn__Bye (87)
 /* Operation wrapper: */
 struct __tdn__Bye
 {
 public:
 	struct wsdd__ByeType tdn__Bye;	/* required element of XSD type wsdd:ByeType */
 public:
-	int soap_type() const { return 91; } /* = unique type id SOAP_TYPE___tdn__Bye */
+	int soap_type() const { return 87; } /* = unique type id SOAP_TYPE___tdn__Bye */
 	         __tdn__Bye();
 	friend SOAP_FMAC1 __tdn__Bye * SOAP_FMAC2 soap_instantiate___tdn__Bye(struct soap*, int, const char*, const char*, size_t*);
 };
 #endif
 
-/* ../../wsdl/onvif-cpp.h:455 */
+/* ../../wsdl/onvif-cpp.h:445 */
 #ifndef SOAP_TYPE___tdn__Probe
-#define SOAP_TYPE___tdn__Probe (94)
+#define SOAP_TYPE___tdn__Probe (90)
 /* Operation wrapper: */
 struct __tdn__Probe
 {
 public:
 	struct wsdd__ProbeType tdn__Probe;	/* required element of XSD type wsdd:ProbeType */
 public:
-	int soap_type() const { return 94; } /* = unique type id SOAP_TYPE___tdn__Probe */
+	int soap_type() const { return 90; } /* = unique type id SOAP_TYPE___tdn__Probe */
 	         __tdn__Probe();
 	friend SOAP_FMAC1 __tdn__Probe * SOAP_FMAC2 soap_instantiate___tdn__Probe(struct soap*, int, const char*, const char*, size_t*);
 };
@@ -648,13 +644,13 @@ public:
 \******************************************************************************/
 
 
-/* ../../wsdl/onvif-cpp.h:101 */
+/* wsdd10.h:18 */
 #ifndef SOAP_TYPE__QName
 #define SOAP_TYPE__QName (5)
 typedef char *_QName;
 #endif
 
-/* ../../wsdl/onvif-cpp.h:101 */
+/* wsdd10.h:18 */
 #ifndef SOAP_TYPE__XML
 #define SOAP_TYPE__XML (6)
 typedef char *_XML;
@@ -662,73 +658,73 @@ typedef char *_XML;
 
 /* wsa.h:220 */
 #ifndef SOAP_TYPE__wsa__EndpointReference
-#define SOAP_TYPE__wsa__EndpointReference (23)
+#define SOAP_TYPE__wsa__EndpointReference (19)
 typedef struct wsa__EndpointReferenceType _wsa__EndpointReference;
 #endif
 
 /* wsa.h:223 */
 #ifndef SOAP_TYPE__wsa__MessageID
-#define SOAP_TYPE__wsa__MessageID (24)
+#define SOAP_TYPE__wsa__MessageID (20)
 typedef char *_wsa__MessageID;
 #endif
 
 /* wsa.h:226 */
 #ifndef SOAP_TYPE__wsa__RelatesTo
-#define SOAP_TYPE__wsa__RelatesTo (25)
+#define SOAP_TYPE__wsa__RelatesTo (21)
 typedef struct wsa__Relationship _wsa__RelatesTo;
 #endif
 
 /* wsa.h:229 */
 #ifndef SOAP_TYPE__wsa__To
-#define SOAP_TYPE__wsa__To (26)
+#define SOAP_TYPE__wsa__To (22)
 typedef char *_wsa__To;
 #endif
 
 /* wsa.h:232 */
 #ifndef SOAP_TYPE__wsa__Action
-#define SOAP_TYPE__wsa__Action (27)
+#define SOAP_TYPE__wsa__Action (23)
 typedef char *_wsa__Action;
 #endif
 
 /* wsa.h:235 */
 #ifndef SOAP_TYPE__wsa__From
-#define SOAP_TYPE__wsa__From (28)
+#define SOAP_TYPE__wsa__From (24)
 typedef struct wsa__EndpointReferenceType _wsa__From;
 #endif
 
 /* wsa.h:238 */
 #ifndef SOAP_TYPE__wsa__ReplyTo
-#define SOAP_TYPE__wsa__ReplyTo (29)
+#define SOAP_TYPE__wsa__ReplyTo (25)
 typedef struct wsa__EndpointReferenceType _wsa__ReplyTo;
 #endif
 
 /* wsa.h:241 */
 #ifndef SOAP_TYPE__wsa__FaultTo
-#define SOAP_TYPE__wsa__FaultTo (30)
+#define SOAP_TYPE__wsa__FaultTo (26)
 typedef struct wsa__EndpointReferenceType _wsa__FaultTo;
 #endif
 
 /* wsa.h:244 */
 #ifndef SOAP_TYPE__wsa__ReplyAfter
-#define SOAP_TYPE__wsa__ReplyAfter (32)
+#define SOAP_TYPE__wsa__ReplyAfter (28)
 typedef unsigned int _wsa__ReplyAfter;
 #endif
 
 /* wsdd10.h:101 */
 #ifndef SOAP_TYPE_wsdd__QNameListType
-#define SOAP_TYPE_wsdd__QNameListType (59)
+#define SOAP_TYPE_wsdd__QNameListType (55)
 typedef _QName wsdd__QNameListType;
 #endif
 
 /* wsdd10.h:104 */
 #ifndef SOAP_TYPE_wsdd__UriListType
-#define SOAP_TYPE_wsdd__UriListType (60)
+#define SOAP_TYPE_wsdd__UriListType (56)
 typedef char *wsdd__UriListType;
 #endif
 
 /* wsdd10.h:107 */
 #ifndef SOAP_TYPE_wsdd__FaultCodeOpenType
-#define SOAP_TYPE_wsdd__FaultCodeOpenType (61)
+#define SOAP_TYPE_wsdd__FaultCodeOpenType (57)
 typedef char *wsdd__FaultCodeOpenType;
 #endif
 

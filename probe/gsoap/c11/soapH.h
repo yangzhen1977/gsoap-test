@@ -85,7 +85,7 @@ SOAP_FMAC3 int * SOAP_FMAC4 soap_get_int(struct soap*, int *, const char*, const
 /* _wsa__ReplyAfter is a typedef synonym for unsignedInt */
 
 #ifndef SOAP_TYPE__wsa__ReplyAfter
-#define SOAP_TYPE__wsa__ReplyAfter (32)
+#define SOAP_TYPE__wsa__ReplyAfter (28)
 #endif
 
 #define soap_default__wsa__ReplyAfter(soap, a) soap_default_unsignedInt(soap, a)
@@ -116,7 +116,7 @@ SOAP_FMAC3 int * SOAP_FMAC4 soap_get_int(struct soap*, int *, const char*, const
 
 
 #ifndef SOAP_TYPE_unsignedInt
-#define SOAP_TYPE_unsignedInt (31)
+#define SOAP_TYPE_unsignedInt (27)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_unsignedInt(struct soap*, unsigned int *);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_unsignedInt(struct soap*, const char*, int, const unsigned int *, const char*);
@@ -135,7 +135,7 @@ SOAP_FMAC3 unsigned int * SOAP_FMAC4 soap_get_unsignedInt(struct soap*, unsigned
 
 
 #ifndef SOAP_TYPE_wsdd__FaultCodeType
-#define SOAP_TYPE_wsdd__FaultCodeType (62)
+#define SOAP_TYPE_wsdd__FaultCodeType (58)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__FaultCodeType(struct soap*, enum wsdd__FaultCodeType *);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_wsdd__FaultCodeType(struct soap*, const char*, int, const enum wsdd__FaultCodeType *, const char*);
@@ -156,7 +156,7 @@ SOAP_FMAC3 enum wsdd__FaultCodeType * SOAP_FMAC4 soap_get_wsdd__FaultCodeType(st
 
 
 #ifndef SOAP_TYPE_wsa__FaultSubcodeValues
-#define SOAP_TYPE_wsa__FaultSubcodeValues (17)
+#define SOAP_TYPE_wsa__FaultSubcodeValues (13)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__FaultSubcodeValues(struct soap*, enum wsa__FaultSubcodeValues *);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_wsa__FaultSubcodeValues(struct soap*, const char*, int, const enum wsa__FaultSubcodeValues *, const char*);
@@ -177,7 +177,7 @@ SOAP_FMAC3 enum wsa__FaultSubcodeValues * SOAP_FMAC4 soap_get_wsa__FaultSubcodeV
 
 
 #ifndef SOAP_TYPE_wsa__RelationshipTypeValues
-#define SOAP_TYPE_wsa__RelationshipTypeValues (16)
+#define SOAP_TYPE_wsa__RelationshipTypeValues (12)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__RelationshipTypeValues(struct soap*, enum wsa__RelationshipTypeValues *);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_wsa__RelationshipTypeValues(struct soap*, const char*, int, const enum wsa__RelationshipTypeValues *, const char*);
@@ -198,7 +198,7 @@ SOAP_FMAC3 enum wsa__RelationshipTypeValues * SOAP_FMAC4 soap_get_wsa__Relations
 
 
 #ifndef SOAP_TYPE___tdn__Probe
-#define SOAP_TYPE___tdn__Probe (94)
+#define SOAP_TYPE___tdn__Probe (90)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___tdn__Probe(struct soap*, struct __tdn__Probe *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___tdn__Probe(struct soap*, const struct __tdn__Probe *);
@@ -243,7 +243,7 @@ SOAP_FMAC3 struct __tdn__Probe * SOAP_FMAC4 soap_get___tdn__Probe(struct soap*, 
 
 
 #ifndef SOAP_TYPE___tdn__Bye
-#define SOAP_TYPE___tdn__Bye (91)
+#define SOAP_TYPE___tdn__Bye (87)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___tdn__Bye(struct soap*, struct __tdn__Bye *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___tdn__Bye(struct soap*, const struct __tdn__Bye *);
@@ -288,7 +288,7 @@ SOAP_FMAC3 struct __tdn__Bye * SOAP_FMAC4 soap_get___tdn__Bye(struct soap*, stru
 
 
 #ifndef SOAP_TYPE___tdn__Hello
-#define SOAP_TYPE___tdn__Hello (89)
+#define SOAP_TYPE___tdn__Hello (85)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___tdn__Hello(struct soap*, struct __tdn__Hello *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___tdn__Hello(struct soap*, const struct __tdn__Hello *);
@@ -333,7 +333,7 @@ SOAP_FMAC3 struct __tdn__Hello * SOAP_FMAC4 soap_get___tdn__Hello(struct soap*, 
 
 
 #ifndef SOAP_TYPE___wsdd__ResolveMatches
-#define SOAP_TYPE___wsdd__ResolveMatches (86)
+#define SOAP_TYPE___wsdd__ResolveMatches (82)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___wsdd__ResolveMatches(struct soap*, struct __wsdd__ResolveMatches *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___wsdd__ResolveMatches(struct soap*, const struct __wsdd__ResolveMatches *);
@@ -376,7 +376,7 @@ SOAP_FMAC3 struct __wsdd__ResolveMatches * SOAP_FMAC4 soap_get___wsdd__ResolveMa
 
 
 #ifndef SOAP_TYPE___wsdd__Resolve
-#define SOAP_TYPE___wsdd__Resolve (83)
+#define SOAP_TYPE___wsdd__Resolve (79)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___wsdd__Resolve(struct soap*, struct __wsdd__Resolve *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___wsdd__Resolve(struct soap*, const struct __wsdd__Resolve *);
@@ -419,7 +419,7 @@ SOAP_FMAC3 struct __wsdd__Resolve * SOAP_FMAC4 soap_get___wsdd__Resolve(struct s
 
 
 #ifndef SOAP_TYPE___wsdd__ProbeMatches
-#define SOAP_TYPE___wsdd__ProbeMatches (80)
+#define SOAP_TYPE___wsdd__ProbeMatches (76)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___wsdd__ProbeMatches(struct soap*, struct __wsdd__ProbeMatches *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___wsdd__ProbeMatches(struct soap*, const struct __wsdd__ProbeMatches *);
@@ -462,7 +462,7 @@ SOAP_FMAC3 struct __wsdd__ProbeMatches * SOAP_FMAC4 soap_get___wsdd__ProbeMatche
 
 
 #ifndef SOAP_TYPE___wsdd__Probe
-#define SOAP_TYPE___wsdd__Probe (77)
+#define SOAP_TYPE___wsdd__Probe (73)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___wsdd__Probe(struct soap*, struct __wsdd__Probe *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___wsdd__Probe(struct soap*, const struct __wsdd__Probe *);
@@ -505,7 +505,7 @@ SOAP_FMAC3 struct __wsdd__Probe * SOAP_FMAC4 soap_get___wsdd__Probe(struct soap*
 
 
 #ifndef SOAP_TYPE___wsdd__Bye
-#define SOAP_TYPE___wsdd__Bye (74)
+#define SOAP_TYPE___wsdd__Bye (70)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___wsdd__Bye(struct soap*, struct __wsdd__Bye *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___wsdd__Bye(struct soap*, const struct __wsdd__Bye *);
@@ -548,7 +548,7 @@ SOAP_FMAC3 struct __wsdd__Bye * SOAP_FMAC4 soap_get___wsdd__Bye(struct soap*, st
 
 
 #ifndef SOAP_TYPE___wsdd__Hello
-#define SOAP_TYPE___wsdd__Hello (71)
+#define SOAP_TYPE___wsdd__Hello (67)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default___wsdd__Hello(struct soap*, struct __wsdd__Hello *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize___wsdd__Hello(struct soap*, const struct __wsdd__Hello *);
@@ -591,7 +591,7 @@ SOAP_FMAC3 struct __wsdd__Hello * SOAP_FMAC4 soap_get___wsdd__Hello(struct soap*
 
 
 #ifndef SOAP_TYPE_wsdd__AppSequenceType
-#define SOAP_TYPE_wsdd__AppSequenceType (58)
+#define SOAP_TYPE_wsdd__AppSequenceType (54)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__AppSequenceType(struct soap*, struct wsdd__AppSequenceType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__AppSequenceType(struct soap*, const struct wsdd__AppSequenceType *);
@@ -642,7 +642,7 @@ SOAP_FMAC3 struct wsdd__AppSequenceType * SOAP_FMAC4 soap_get_wsdd__AppSequenceT
 
 
 #ifndef SOAP_TYPE_wsdd__SigType
-#define SOAP_TYPE_wsdd__SigType (57)
+#define SOAP_TYPE_wsdd__SigType (53)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__SigType(struct soap*, struct wsdd__SigType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__SigType(struct soap*, const struct wsdd__SigType *);
@@ -697,7 +697,7 @@ SOAP_FMAC3 struct wsdd__SigType * SOAP_FMAC4 soap_get_wsdd__SigType(struct soap*
 
 
 #ifndef SOAP_TYPE_wsdd__SecurityType
-#define SOAP_TYPE_wsdd__SecurityType (56)
+#define SOAP_TYPE_wsdd__SecurityType (52)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__SecurityType(struct soap*, struct wsdd__SecurityType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__SecurityType(struct soap*, const struct wsdd__SecurityType *);
@@ -740,7 +740,7 @@ SOAP_FMAC3 struct wsdd__SecurityType * SOAP_FMAC4 soap_get_wsdd__SecurityType(st
 
 
 #ifndef SOAP_TYPE_wsdd__ScopesType
-#define SOAP_TYPE_wsdd__ScopesType (55)
+#define SOAP_TYPE_wsdd__ScopesType (51)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ScopesType(struct soap*, struct wsdd__ScopesType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ScopesType(struct soap*, const struct wsdd__ScopesType *);
@@ -785,7 +785,7 @@ SOAP_FMAC3 struct wsdd__ScopesType * SOAP_FMAC4 soap_get_wsdd__ScopesType(struct
 
 
 #ifndef SOAP_TYPE_wsdd__ResolveMatchType
-#define SOAP_TYPE_wsdd__ResolveMatchType (54)
+#define SOAP_TYPE_wsdd__ResolveMatchType (50)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ResolveMatchType(struct soap*, struct wsdd__ResolveMatchType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ResolveMatchType(struct soap*, const struct wsdd__ResolveMatchType *);
@@ -840,7 +840,7 @@ SOAP_FMAC3 struct wsdd__ResolveMatchType * SOAP_FMAC4 soap_get_wsdd__ResolveMatc
 
 
 #ifndef SOAP_TYPE_wsdd__ResolveMatchesType
-#define SOAP_TYPE_wsdd__ResolveMatchesType (53)
+#define SOAP_TYPE_wsdd__ResolveMatchesType (49)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ResolveMatchesType(struct soap*, struct wsdd__ResolveMatchesType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ResolveMatchesType(struct soap*, const struct wsdd__ResolveMatchesType *);
@@ -883,7 +883,7 @@ SOAP_FMAC3 struct wsdd__ResolveMatchesType * SOAP_FMAC4 soap_get_wsdd__ResolveMa
 
 
 #ifndef SOAP_TYPE_wsdd__ResolveType
-#define SOAP_TYPE_wsdd__ResolveType (52)
+#define SOAP_TYPE_wsdd__ResolveType (48)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ResolveType(struct soap*, struct wsdd__ResolveType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ResolveType(struct soap*, const struct wsdd__ResolveType *);
@@ -928,7 +928,7 @@ SOAP_FMAC3 struct wsdd__ResolveType * SOAP_FMAC4 soap_get_wsdd__ResolveType(stru
 
 
 #ifndef SOAP_TYPE_wsdd__ProbeMatchType
-#define SOAP_TYPE_wsdd__ProbeMatchType (51)
+#define SOAP_TYPE_wsdd__ProbeMatchType (47)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ProbeMatchType(struct soap*, struct wsdd__ProbeMatchType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ProbeMatchType(struct soap*, const struct wsdd__ProbeMatchType *);
@@ -983,7 +983,7 @@ SOAP_FMAC3 struct wsdd__ProbeMatchType * SOAP_FMAC4 soap_get_wsdd__ProbeMatchTyp
 
 
 #ifndef SOAP_TYPE_wsdd__ProbeMatchesType
-#define SOAP_TYPE_wsdd__ProbeMatchesType (50)
+#define SOAP_TYPE_wsdd__ProbeMatchesType (46)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ProbeMatchesType(struct soap*, struct wsdd__ProbeMatchesType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ProbeMatchesType(struct soap*, const struct wsdd__ProbeMatchesType *);
@@ -1032,7 +1032,7 @@ SOAP_FMAC3 struct wsdd__ProbeMatchesType * SOAP_FMAC4 soap_get_wsdd__ProbeMatche
 
 
 #ifndef SOAP_TYPE_wsdd__ProbeType
-#define SOAP_TYPE_wsdd__ProbeType (49)
+#define SOAP_TYPE_wsdd__ProbeType (45)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ProbeType(struct soap*, struct wsdd__ProbeType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ProbeType(struct soap*, const struct wsdd__ProbeType *);
@@ -1077,7 +1077,7 @@ SOAP_FMAC3 struct wsdd__ProbeType * SOAP_FMAC4 soap_get_wsdd__ProbeType(struct s
 
 
 #ifndef SOAP_TYPE_wsdd__ByeType
-#define SOAP_TYPE_wsdd__ByeType (48)
+#define SOAP_TYPE_wsdd__ByeType (44)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__ByeType(struct soap*, struct wsdd__ByeType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__ByeType(struct soap*, const struct wsdd__ByeType *);
@@ -1130,7 +1130,7 @@ SOAP_FMAC3 struct wsdd__ByeType * SOAP_FMAC4 soap_get_wsdd__ByeType(struct soap*
 
 
 #ifndef SOAP_TYPE_wsdd__HelloType
-#define SOAP_TYPE_wsdd__HelloType (47)
+#define SOAP_TYPE_wsdd__HelloType (43)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsdd__HelloType(struct soap*, struct wsdd__HelloType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsdd__HelloType(struct soap*, const struct wsdd__HelloType *);
@@ -1187,7 +1187,7 @@ SOAP_FMAC3 struct wsdd__HelloType * SOAP_FMAC4 soap_get_wsdd__HelloType(struct s
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_SOAP_ENV__Fault
-#define SOAP_TYPE_SOAP_ENV__Fault (46)
+#define SOAP_TYPE_SOAP_ENV__Fault (42)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__Fault(struct soap*, struct SOAP_ENV__Fault *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV__Fault(struct soap*, const struct SOAP_ENV__Fault *);
@@ -1250,7 +1250,7 @@ SOAP_FMAC3 struct SOAP_ENV__Fault * SOAP_FMAC4 soap_get_SOAP_ENV__Fault(struct s
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_SOAP_ENV__Reason
-#define SOAP_TYPE_SOAP_ENV__Reason (42)
+#define SOAP_TYPE_SOAP_ENV__Reason (38)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__Reason(struct soap*, struct SOAP_ENV__Reason *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV__Reason(struct soap*, const struct SOAP_ENV__Reason *);
@@ -1297,7 +1297,7 @@ SOAP_FMAC3 struct SOAP_ENV__Reason * SOAP_FMAC4 soap_get_SOAP_ENV__Reason(struct
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_SOAP_ENV__Code
-#define SOAP_TYPE_SOAP_ENV__Code (40)
+#define SOAP_TYPE_SOAP_ENV__Code (36)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__Code(struct soap*, struct SOAP_ENV__Code *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV__Code(struct soap*, const struct SOAP_ENV__Code *);
@@ -1346,7 +1346,7 @@ SOAP_FMAC3 struct SOAP_ENV__Code * SOAP_FMAC4 soap_get_SOAP_ENV__Code(struct soa
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_SOAP_ENV__Detail
-#define SOAP_TYPE_SOAP_ENV__Detail (38)
+#define SOAP_TYPE_SOAP_ENV__Detail (34)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__Detail(struct soap*, struct SOAP_ENV__Detail *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV__Detail(struct soap*, const struct SOAP_ENV__Detail *);
@@ -1401,7 +1401,7 @@ SOAP_FMAC3 struct SOAP_ENV__Detail * SOAP_FMAC4 soap_get_SOAP_ENV__Detail(struct
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_SOAP_ENV__Header
-#define SOAP_TYPE_SOAP_ENV__Header (33)
+#define SOAP_TYPE_SOAP_ENV__Header (29)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__Header(struct soap*, struct SOAP_ENV__Header *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV__Header(struct soap*, const struct SOAP_ENV__Header *);
@@ -1461,7 +1461,7 @@ SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 soap_get_SOAP_ENV__Header(struct
 /* _wsa__FaultTo is a typedef synonym for wsa__EndpointReferenceType */
 
 #ifndef SOAP_TYPE__wsa__FaultTo
-#define SOAP_TYPE__wsa__FaultTo (30)
+#define SOAP_TYPE__wsa__FaultTo (26)
 #endif
 
 #define soap_default__wsa__FaultTo(soap, a) soap_default_wsa__EndpointReferenceType(soap, a)
@@ -1508,7 +1508,7 @@ SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 soap_get_SOAP_ENV__Header(struct
 /* _wsa__ReplyTo is a typedef synonym for wsa__EndpointReferenceType */
 
 #ifndef SOAP_TYPE__wsa__ReplyTo
-#define SOAP_TYPE__wsa__ReplyTo (29)
+#define SOAP_TYPE__wsa__ReplyTo (25)
 #endif
 
 #define soap_default__wsa__ReplyTo(soap, a) soap_default_wsa__EndpointReferenceType(soap, a)
@@ -1555,7 +1555,7 @@ SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 soap_get_SOAP_ENV__Header(struct
 /* _wsa__From is a typedef synonym for wsa__EndpointReferenceType */
 
 #ifndef SOAP_TYPE__wsa__From
-#define SOAP_TYPE__wsa__From (28)
+#define SOAP_TYPE__wsa__From (24)
 #endif
 
 #define soap_default__wsa__From(soap, a) soap_default_wsa__EndpointReferenceType(soap, a)
@@ -1602,7 +1602,7 @@ SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 soap_get_SOAP_ENV__Header(struct
 /* _wsa__RelatesTo is a typedef synonym for wsa__Relationship */
 
 #ifndef SOAP_TYPE__wsa__RelatesTo
-#define SOAP_TYPE__wsa__RelatesTo (25)
+#define SOAP_TYPE__wsa__RelatesTo (21)
 #endif
 
 #define soap_default__wsa__RelatesTo(soap, a) soap_default_wsa__Relationship(soap, a)
@@ -1649,7 +1649,7 @@ SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 soap_get_SOAP_ENV__Header(struct
 /* _wsa__EndpointReference is a typedef synonym for wsa__EndpointReferenceType */
 
 #ifndef SOAP_TYPE__wsa__EndpointReference
-#define SOAP_TYPE__wsa__EndpointReference (23)
+#define SOAP_TYPE__wsa__EndpointReference (19)
 #endif
 
 #define soap_default__wsa__EndpointReference(soap, a) soap_default_wsa__EndpointReferenceType(soap, a)
@@ -1695,7 +1695,7 @@ SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 soap_get_SOAP_ENV__Header(struct
 
 
 #ifndef SOAP_TYPE_wsa__Relationship
-#define SOAP_TYPE_wsa__Relationship (15)
+#define SOAP_TYPE_wsa__Relationship (11)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__Relationship(struct soap*, struct wsa__Relationship *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsa__Relationship(struct soap*, const struct wsa__Relationship *);
@@ -1742,7 +1742,7 @@ SOAP_FMAC3 struct wsa__Relationship * SOAP_FMAC4 soap_get_wsa__Relationship(stru
 
 
 #ifndef SOAP_TYPE_wsa__ServiceNameType
-#define SOAP_TYPE_wsa__ServiceNameType (14)
+#define SOAP_TYPE_wsa__ServiceNameType (10)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__ServiceNameType(struct soap*, struct wsa__ServiceNameType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsa__ServiceNameType(struct soap*, const struct wsa__ServiceNameType *);
@@ -1789,7 +1789,7 @@ SOAP_FMAC3 struct wsa__ServiceNameType * SOAP_FMAC4 soap_get_wsa__ServiceNameTyp
 
 
 #ifndef SOAP_TYPE_wsa__ReferenceParametersType
-#define SOAP_TYPE_wsa__ReferenceParametersType (13)
+#define SOAP_TYPE_wsa__ReferenceParametersType (9)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__ReferenceParametersType(struct soap*, struct wsa__ReferenceParametersType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsa__ReferenceParametersType(struct soap*, const struct wsa__ReferenceParametersType *);
@@ -1838,7 +1838,7 @@ SOAP_FMAC3 struct wsa__ReferenceParametersType * SOAP_FMAC4 soap_get_wsa__Refere
 
 
 #ifndef SOAP_TYPE_wsa__ReferencePropertiesType
-#define SOAP_TYPE_wsa__ReferencePropertiesType (12)
+#define SOAP_TYPE_wsa__ReferencePropertiesType (8)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__ReferencePropertiesType(struct soap*, struct wsa__ReferencePropertiesType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsa__ReferencePropertiesType(struct soap*, const struct wsa__ReferencePropertiesType *);
@@ -1887,7 +1887,7 @@ SOAP_FMAC3 struct wsa__ReferencePropertiesType * SOAP_FMAC4 soap_get_wsa__Refere
 
 
 #ifndef SOAP_TYPE_wsa__EndpointReferenceType
-#define SOAP_TYPE_wsa__EndpointReferenceType (11)
+#define SOAP_TYPE_wsa__EndpointReferenceType (7)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_wsa__EndpointReferenceType(struct soap*, struct wsa__EndpointReferenceType *);
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_wsa__EndpointReferenceType(struct soap*, const struct wsa__EndpointReferenceType *);
@@ -1950,7 +1950,7 @@ SOAP_FMAC3 struct wsa__EndpointReferenceType * SOAP_FMAC4 soap_get_wsa__Endpoint
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ResolveMatchesType
-#define SOAP_TYPE_PointerTowsdd__ResolveMatchesType (84)
+#define SOAP_TYPE_PointerTowsdd__ResolveMatchesType (80)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ResolveMatchesType(struct soap*, struct wsdd__ResolveMatchesType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ResolveMatchesType(struct soap*, const char *, int, struct wsdd__ResolveMatchesType *const*, const char *);
@@ -1969,7 +1969,7 @@ SOAP_FMAC3 struct wsdd__ResolveMatchesType ** SOAP_FMAC4 soap_get_PointerTowsdd_
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ResolveType
-#define SOAP_TYPE_PointerTowsdd__ResolveType (81)
+#define SOAP_TYPE_PointerTowsdd__ResolveType (77)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ResolveType(struct soap*, struct wsdd__ResolveType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ResolveType(struct soap*, const char *, int, struct wsdd__ResolveType *const*, const char *);
@@ -1988,7 +1988,7 @@ SOAP_FMAC3 struct wsdd__ResolveType ** SOAP_FMAC4 soap_get_PointerTowsdd__Resolv
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ProbeMatchesType
-#define SOAP_TYPE_PointerTowsdd__ProbeMatchesType (78)
+#define SOAP_TYPE_PointerTowsdd__ProbeMatchesType (74)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ProbeMatchesType(struct soap*, struct wsdd__ProbeMatchesType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ProbeMatchesType(struct soap*, const char *, int, struct wsdd__ProbeMatchesType *const*, const char *);
@@ -2007,7 +2007,7 @@ SOAP_FMAC3 struct wsdd__ProbeMatchesType ** SOAP_FMAC4 soap_get_PointerTowsdd__P
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ProbeType
-#define SOAP_TYPE_PointerTowsdd__ProbeType (75)
+#define SOAP_TYPE_PointerTowsdd__ProbeType (71)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ProbeType(struct soap*, struct wsdd__ProbeType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ProbeType(struct soap*, const char *, int, struct wsdd__ProbeType *const*, const char *);
@@ -2026,7 +2026,7 @@ SOAP_FMAC3 struct wsdd__ProbeType ** SOAP_FMAC4 soap_get_PointerTowsdd__ProbeTyp
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ByeType
-#define SOAP_TYPE_PointerTowsdd__ByeType (72)
+#define SOAP_TYPE_PointerTowsdd__ByeType (68)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ByeType(struct soap*, struct wsdd__ByeType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ByeType(struct soap*, const char *, int, struct wsdd__ByeType *const*, const char *);
@@ -2045,7 +2045,7 @@ SOAP_FMAC3 struct wsdd__ByeType ** SOAP_FMAC4 soap_get_PointerTowsdd__ByeType(st
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__HelloType
-#define SOAP_TYPE_PointerTowsdd__HelloType (69)
+#define SOAP_TYPE_PointerTowsdd__HelloType (65)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__HelloType(struct soap*, struct wsdd__HelloType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__HelloType(struct soap*, const char *, int, struct wsdd__HelloType *const*, const char *);
@@ -2064,7 +2064,7 @@ SOAP_FMAC3 struct wsdd__HelloType ** SOAP_FMAC4 soap_get_PointerTowsdd__HelloTyp
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__AppSequenceType
-#define SOAP_TYPE_PointerTowsdd__AppSequenceType (68)
+#define SOAP_TYPE_PointerTowsdd__AppSequenceType (64)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__AppSequenceType(struct soap*, struct wsdd__AppSequenceType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__AppSequenceType(struct soap*, const char *, int, struct wsdd__AppSequenceType *const*, const char *);
@@ -2083,7 +2083,7 @@ SOAP_FMAC3 struct wsdd__AppSequenceType ** SOAP_FMAC4 soap_get_PointerTowsdd__Ap
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__SigType
-#define SOAP_TYPE_PointerTowsdd__SigType (67)
+#define SOAP_TYPE_PointerTowsdd__SigType (63)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__SigType(struct soap*, struct wsdd__SigType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__SigType(struct soap*, const char *, int, struct wsdd__SigType *const*, const char *);
@@ -2102,7 +2102,7 @@ SOAP_FMAC3 struct wsdd__SigType ** SOAP_FMAC4 soap_get_PointerTowsdd__SigType(st
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ResolveMatchType
-#define SOAP_TYPE_PointerTowsdd__ResolveMatchType (66)
+#define SOAP_TYPE_PointerTowsdd__ResolveMatchType (62)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ResolveMatchType(struct soap*, struct wsdd__ResolveMatchType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ResolveMatchType(struct soap*, const char *, int, struct wsdd__ResolveMatchType *const*, const char *);
@@ -2121,7 +2121,7 @@ SOAP_FMAC3 struct wsdd__ResolveMatchType ** SOAP_FMAC4 soap_get_PointerTowsdd__R
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ProbeMatchType
-#define SOAP_TYPE_PointerTowsdd__ProbeMatchType (65)
+#define SOAP_TYPE_PointerTowsdd__ProbeMatchType (61)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ProbeMatchType(struct soap*, struct wsdd__ProbeMatchType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ProbeMatchType(struct soap*, const char *, int, struct wsdd__ProbeMatchType *const*, const char *);
@@ -2140,7 +2140,7 @@ SOAP_FMAC3 struct wsdd__ProbeMatchType ** SOAP_FMAC4 soap_get_PointerTowsdd__Pro
 
 
 #ifndef SOAP_TYPE_PointerTounsignedInt
-#define SOAP_TYPE_PointerTounsignedInt (64)
+#define SOAP_TYPE_PointerTounsignedInt (60)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTounsignedInt(struct soap*, unsigned int *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTounsignedInt(struct soap*, const char *, int, unsigned int *const*, const char *);
@@ -2159,7 +2159,7 @@ SOAP_FMAC3 unsigned int ** SOAP_FMAC4 soap_get_PointerTounsignedInt(struct soap*
 
 
 #ifndef SOAP_TYPE_PointerTowsdd__ScopesType
-#define SOAP_TYPE_PointerTowsdd__ScopesType (63)
+#define SOAP_TYPE_PointerTowsdd__ScopesType (59)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsdd__ScopesType(struct soap*, struct wsdd__ScopesType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsdd__ScopesType(struct soap*, const char *, int, struct wsdd__ScopesType *const*, const char *);
@@ -2178,7 +2178,7 @@ SOAP_FMAC3 struct wsdd__ScopesType ** SOAP_FMAC4 soap_get_PointerTowsdd__ScopesT
 
 
 #ifndef SOAP_TYPE_wsdd__FaultCodeOpenType
-#define SOAP_TYPE_wsdd__FaultCodeOpenType (61)
+#define SOAP_TYPE_wsdd__FaultCodeOpenType (57)
 #endif
 
 #define soap_default_wsdd__FaultCodeOpenType(soap, a) soap_default_string(soap, a)
@@ -2206,7 +2206,7 @@ SOAP_FMAC3 char ** SOAP_FMAC4 soap_get_wsdd__FaultCodeOpenType(struct soap*, cha
 
 
 #ifndef SOAP_TYPE_wsdd__UriListType
-#define SOAP_TYPE_wsdd__UriListType (60)
+#define SOAP_TYPE_wsdd__UriListType (56)
 #endif
 
 #define soap_default_wsdd__UriListType(soap, a) soap_default_string(soap, a)
@@ -2235,7 +2235,7 @@ SOAP_FMAC3 char ** SOAP_FMAC4 soap_get_wsdd__UriListType(struct soap*, char **, 
 /* wsdd__QNameListType is a typedef synonym for _QName */
 
 #ifndef SOAP_TYPE_wsdd__QNameListType
-#define SOAP_TYPE_wsdd__QNameListType (59)
+#define SOAP_TYPE_wsdd__QNameListType (55)
 #endif
 
 #define soap_default_wsdd__QNameListType(soap, a) soap_default__QName(soap, a)
@@ -2265,7 +2265,7 @@ SOAP_FMAC3 char ** SOAP_FMAC4 soap_get_wsdd__UriListType(struct soap*, char **, 
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_PointerToSOAP_ENV__Reason
-#define SOAP_TYPE_PointerToSOAP_ENV__Reason (43)
+#define SOAP_TYPE_PointerToSOAP_ENV__Reason (39)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerToSOAP_ENV__Reason(struct soap*, struct SOAP_ENV__Reason *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToSOAP_ENV__Reason(struct soap*, const char *, int, struct SOAP_ENV__Reason *const*, const char *);
@@ -2288,7 +2288,7 @@ SOAP_FMAC3 struct SOAP_ENV__Reason ** SOAP_FMAC4 soap_get_PointerToSOAP_ENV__Rea
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_PointerToSOAP_ENV__Code
-#define SOAP_TYPE_PointerToSOAP_ENV__Code (41)
+#define SOAP_TYPE_PointerToSOAP_ENV__Code (37)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerToSOAP_ENV__Code(struct soap*, struct SOAP_ENV__Code *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToSOAP_ENV__Code(struct soap*, const char *, int, struct SOAP_ENV__Code *const*, const char *);
@@ -2311,7 +2311,7 @@ SOAP_FMAC3 struct SOAP_ENV__Code ** SOAP_FMAC4 soap_get_PointerToSOAP_ENV__Code(
 #ifndef WITH_NOGLOBAL
 
 #ifndef SOAP_TYPE_PointerToSOAP_ENV__Detail
-#define SOAP_TYPE_PointerToSOAP_ENV__Detail (39)
+#define SOAP_TYPE_PointerToSOAP_ENV__Detail (35)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerToSOAP_ENV__Detail(struct soap*, struct SOAP_ENV__Detail *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToSOAP_ENV__Detail(struct soap*, const char *, int, struct SOAP_ENV__Detail *const*, const char *);
@@ -2332,7 +2332,7 @@ SOAP_FMAC3 struct SOAP_ENV__Detail ** SOAP_FMAC4 soap_get_PointerToSOAP_ENV__Det
 #endif
 
 #ifndef SOAP_TYPE_PointerTo_wsa__FaultTo
-#define SOAP_TYPE_PointerTo_wsa__FaultTo (37)
+#define SOAP_TYPE_PointerTo_wsa__FaultTo (33)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTo_wsa__FaultTo(struct soap*, struct wsa__EndpointReferenceType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTo_wsa__FaultTo(struct soap*, const char *, int, struct wsa__EndpointReferenceType *const*, const char *);
@@ -2351,7 +2351,7 @@ SOAP_FMAC3 struct wsa__EndpointReferenceType ** SOAP_FMAC4 soap_get_PointerTo_ws
 
 
 #ifndef SOAP_TYPE_PointerTo_wsa__ReplyTo
-#define SOAP_TYPE_PointerTo_wsa__ReplyTo (36)
+#define SOAP_TYPE_PointerTo_wsa__ReplyTo (32)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTo_wsa__ReplyTo(struct soap*, struct wsa__EndpointReferenceType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTo_wsa__ReplyTo(struct soap*, const char *, int, struct wsa__EndpointReferenceType *const*, const char *);
@@ -2370,7 +2370,7 @@ SOAP_FMAC3 struct wsa__EndpointReferenceType ** SOAP_FMAC4 soap_get_PointerTo_ws
 
 
 #ifndef SOAP_TYPE_PointerTo_wsa__From
-#define SOAP_TYPE_PointerTo_wsa__From (35)
+#define SOAP_TYPE_PointerTo_wsa__From (31)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTo_wsa__From(struct soap*, struct wsa__EndpointReferenceType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTo_wsa__From(struct soap*, const char *, int, struct wsa__EndpointReferenceType *const*, const char *);
@@ -2389,7 +2389,7 @@ SOAP_FMAC3 struct wsa__EndpointReferenceType ** SOAP_FMAC4 soap_get_PointerTo_ws
 
 
 #ifndef SOAP_TYPE_PointerTo_wsa__RelatesTo
-#define SOAP_TYPE_PointerTo_wsa__RelatesTo (34)
+#define SOAP_TYPE_PointerTo_wsa__RelatesTo (30)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTo_wsa__RelatesTo(struct soap*, struct wsa__Relationship *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTo_wsa__RelatesTo(struct soap*, const char *, int, struct wsa__Relationship *const*, const char *);
@@ -2409,7 +2409,7 @@ SOAP_FMAC3 struct wsa__Relationship ** SOAP_FMAC4 soap_get_PointerTo_wsa__Relate
 /* _wsa__Action is a typedef synonym for string */
 
 #ifndef SOAP_TYPE__wsa__Action
-#define SOAP_TYPE__wsa__Action (27)
+#define SOAP_TYPE__wsa__Action (23)
 #endif
 
 #define soap_default__wsa__Action(soap, a) soap_default_string(soap, a)
@@ -2444,7 +2444,7 @@ SOAP_FMAC3 struct wsa__Relationship ** SOAP_FMAC4 soap_get_PointerTo_wsa__Relate
 /* _wsa__To is a typedef synonym for string */
 
 #ifndef SOAP_TYPE__wsa__To
-#define SOAP_TYPE__wsa__To (26)
+#define SOAP_TYPE__wsa__To (22)
 #endif
 
 #define soap_default__wsa__To(soap, a) soap_default_string(soap, a)
@@ -2479,7 +2479,7 @@ SOAP_FMAC3 struct wsa__Relationship ** SOAP_FMAC4 soap_get_PointerTo_wsa__Relate
 /* _wsa__MessageID is a typedef synonym for string */
 
 #ifndef SOAP_TYPE__wsa__MessageID
-#define SOAP_TYPE__wsa__MessageID (24)
+#define SOAP_TYPE__wsa__MessageID (20)
 #endif
 
 #define soap_default__wsa__MessageID(soap, a) soap_default_string(soap, a)
@@ -2513,7 +2513,7 @@ SOAP_FMAC3 struct wsa__Relationship ** SOAP_FMAC4 soap_get_PointerTo_wsa__Relate
 
 
 #ifndef SOAP_TYPE_PointerTowsa__ServiceNameType
-#define SOAP_TYPE_PointerTowsa__ServiceNameType (21)
+#define SOAP_TYPE_PointerTowsa__ServiceNameType (17)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsa__ServiceNameType(struct soap*, struct wsa__ServiceNameType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsa__ServiceNameType(struct soap*, const char *, int, struct wsa__ServiceNameType *const*, const char *);
@@ -2532,7 +2532,7 @@ SOAP_FMAC3 struct wsa__ServiceNameType ** SOAP_FMAC4 soap_get_PointerTowsa__Serv
 
 
 #ifndef SOAP_TYPE_PointerTo_QName
-#define SOAP_TYPE_PointerTo_QName (20)
+#define SOAP_TYPE_PointerTo_QName (16)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTo_QName(struct soap*, char **const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTo_QName(struct soap*, const char *, int, char **const*, const char *);
@@ -2551,7 +2551,7 @@ SOAP_FMAC3 char *** SOAP_FMAC4 soap_get_PointerTo_QName(struct soap*, char ***, 
 
 
 #ifndef SOAP_TYPE_PointerTowsa__ReferenceParametersType
-#define SOAP_TYPE_PointerTowsa__ReferenceParametersType (19)
+#define SOAP_TYPE_PointerTowsa__ReferenceParametersType (15)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsa__ReferenceParametersType(struct soap*, struct wsa__ReferenceParametersType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsa__ReferenceParametersType(struct soap*, const char *, int, struct wsa__ReferenceParametersType *const*, const char *);
@@ -2570,7 +2570,7 @@ SOAP_FMAC3 struct wsa__ReferenceParametersType ** SOAP_FMAC4 soap_get_PointerTow
 
 
 #ifndef SOAP_TYPE_PointerTowsa__ReferencePropertiesType
-#define SOAP_TYPE_PointerTowsa__ReferencePropertiesType (18)
+#define SOAP_TYPE_PointerTowsa__ReferencePropertiesType (14)
 #endif
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerTowsa__ReferencePropertiesType(struct soap*, struct wsa__ReferencePropertiesType *const*);
 SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTowsa__ReferencePropertiesType(struct soap*, const char *, int, struct wsa__ReferencePropertiesType *const*, const char *);
