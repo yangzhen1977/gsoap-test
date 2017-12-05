@@ -1,23 +1,26 @@
 cmake_minimum_required(VERSION 3.0)
 
-set(TARGET_NAME calc_client)
+set(TARGET_NAME discover)
 
 set(GSOAP_CLIENT_HEADERS
-    ../gsoap/soapH.h
-    ../gsoap/soapStub.h
+    ${ONVIF_GSOAP_HOME}/soapH.h
+    ${ONVIF_GSOAP_HOME}/soapStub.h
     )
 
 set(GSOAP_CLIENT_SRCS
-    ../gsoap/soapC.cpp
-    ../gsoap/soapClient.cpp
+    ${ONVIF_GSOAP_HOME}/soapC.cpp
+    ${ONVIF_GSOAP_HOME}/soapClient.cpp
+    ${ONVIF_GSOAP_HOME}/nsmap.cpp
+    ${SYSTEM_GSOAP_HOME}/custom/duration.c
 )
 
 set(SRCS 
-    ./calc_client.cpp
+    ./discover.cpp
     )
 
 add_executable (${TARGET_NAME} ${SRCS} ${GSOAP_CLIENT_SRCS})
 
 TARGET_LINK_LIBRARIES(${TARGET_NAME} 
     gsoap++
+    uuid
 )
