@@ -13,6 +13,6 @@ set(ONVIF_GSOAP_C11_HOME ${PROJECT_SOURCE_DIR}/gsoap/c11)
 #    ${UUID_INCLUDE_DIRS}
 #)
 
-add_subdirectory (discovery)
+#add_subdirectory (discovery)
 #add_subdirectory (server)
-#add_subdirectory (client)
+add_subdirectory (client)
